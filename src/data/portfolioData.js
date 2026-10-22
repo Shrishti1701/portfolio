@@ -49,14 +49,14 @@ export const projects = [
     details: ['Predictions are screening signals, not definitive fact checks.'],
     technologies: ['Python', 'NLTK', 'TF-IDF', 'Logistic Regression', 'Streamlit'],
     capabilities: ['NLP text classification', 'Related-news API lookup'],
-    githubUrl: null, liveDemoUrl: null,
+    githubUrl: 'https://github.com/Shrishti1701/fake-news-detector', liveDemoUrl: null,
   },
   {
     name: 'Judgment Bias Detector', status: 'Educational app', number: '03',
     description: 'An educational NLP app for exploring language patterns in sample court judgments and visualizing model outputs.',
     details: ['Built for exploration and learning; it does not provide legal conclusions.'],
     technologies: ['Python', 'NLTK', 'scikit-learn', 'Streamlit'],
-    githubUrl: null, liveDemoUrl: null,
+    githubUrl: 'https://github.com/Shrishti1701/judgment-bias-detector', liveDemoUrl: null,
   },
   {
     name: 'Workforce Analytics Predictive Model', status: 'Exploration', number: '04',
@@ -68,7 +68,7 @@ export const projects = [
   {
     name: 'Netflix EDA Dashboard', status: 'Built', number: '05',
     description: 'An interactive Streamlit dashboard for exploring the Netflix catalog and content trends.',
-    details: [], technologies: ['Python', 'Streamlit', 'Data Visualization'], githubUrl: null, liveDemoUrl: null,
+    details: [], technologies: ['Python', 'Streamlit', 'Data Visualization'], githubUrl: 'https://github.com/Shrishti1701/netflix-data-analysis', liveDemoUrl: null,
   },
   {
     name: 'Court Data Fetcher & Mini Dashboard', status: 'Built', number: '06',

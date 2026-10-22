@@ -148,7 +148,7 @@ function ProjectCard({ project }) {
     <div className="project-stack">{project.technologies.map((technology) => <span key={technology}>{technology}</span>)}</div>
     {project.capabilities?.length > 0 && <div className="project-capabilities" aria-label="Project capabilities">{project.capabilities.map((capability) => <span key={capability}>{capability}</span>)}</div>}
     {(project.githubUrl || project.liveDemoUrl) && <div className="project-actions">
-      {project.githubUrl && <a className="project-action" href={project.githubUrl} target="_blank" rel="noopener noreferrer">View GitHub Repository <span aria-hidden="true">↗</span></a>}
+      {project.githubUrl && <a className="project-action" href={project.githubUrl} target="_blank" rel="noopener noreferrer">GitHub Repository <span aria-hidden="true">↗</span></a>}
       {project.liveDemoUrl && <a className="project-action secondary" href={project.liveDemoUrl} target="_blank" rel="noopener noreferrer">Live Demo <span aria-hidden="true">↗</span></a>}
     </div>}
   </article>;
