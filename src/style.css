@@ -376,9 +376,59 @@ h1 em,h2 em { color: var(--teal); font-family: Georgia, serif; font-weight: 400;
 .menu-toggle { border-color: var(--border); background: var(--card); }
 .menu-toggle span { background: var(--ink); }
 
+/* Featured project evidence and expandable benchmark notes. */
+.featured-project-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.featured-project-grid .project-card:first-child { grid-column: auto; min-height: 0; }
+.featured-project-grid .project-card { padding: 24px; }
+.featured-project-grid .project-card h3 { margin-top: 17px; font-size: 18px; line-height: 1.4; }
+.project-metrics { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8px; margin: 13px 0 0; }
+.project-metric { display: flex; min-height: 58px; flex-direction: column; justify-content: center; gap: 4px; padding: 9px 11px; border: 1px solid rgba(8,127,140,.13); border-radius: 6px; background: #f5fafb; }
+.project-metric strong { color: var(--ink); font-size: 17px; letter-spacing: -.025em; line-height: 1.1; }
+.project-metric span { color: var(--muted); font-size: 9px; line-height: 1.4; }
+.metric-note { margin: 10px 0 0; color: var(--muted); font-size: 9px; line-height: 1.6; }
+.project-expanded { margin-top: 12px; border-top: 1px solid var(--border); color: var(--muted-strong); font-size: 10px; }
+.project-expanded summary { width: fit-content; padding: 11px 0 4px; color: var(--teal); font-size: 10px; font-weight: 650; cursor: pointer; }
+.project-expanded summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+.project-expanded ul { display: grid; gap: 5px; margin: 9px 0 0; padding-left: 17px; line-height: 1.55; }
+.project-expanded li::marker { color: var(--teal); }
+.other-projects { margin-top: 65px; padding-top: 30px; border-top: 1px solid var(--border); }
+.other-projects-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+.other-projects-heading h3 { margin: 0; color: var(--ink); font-size: 20px; }
+.other-projects-heading p { max-width: 340px; margin: 0; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.other-projects .project-grid { margin-top: 20px; }
+
+@media (max-width: 700px) {
+  .featured-project-grid { grid-template-columns: 1fr; }
+  .featured-project-grid .project-card { padding: 20px 17px; }
+  .project-metric { min-height: 54px; padding: 8px; }
+  .project-metric strong { font-size: 15px; }
+  .project-metric span { font-size: 8px; }
+  .other-projects { margin-top: 45px; padding-top: 24px; }
+  .other-projects-heading { display: block; }
+  .other-projects-heading p { margin-top: 8px; }
+}
+
 @media (max-width: 700px) {
   .nav nav { border-bottom-color: var(--border); background: rgba(255,255,255,.98); box-shadow: 0 14px 22px rgba(31,57,87,.08); }
   .nav nav a:not(.nav-contact) { border-bottom-color: rgba(24,57,78,.1); }
+}
+
+/* Improve project scanability and keep the scroll companion out of the way. */
+.project-description { font-size: 13px; }
+.project-details { font-size: 11px; }
+.project-stack span { font-size: 9px; }
+.project-metric span { font-size: 10px; }
+.metric-note { font-size: 10px; }
+.project-expanded { font-size: 11px; }
+.project-expanded summary { font-size: 11px; }
+.avatar-stage.is-following { width: 160px; height: 208px; }
+.avatar-stage.is-following .welcome-bubble { max-width: 176px; }
+
+@media (max-width: 700px) {
+  .avatar-stage.is-following { display: none; }
+  .project-description { font-size: 12px; }
+  .project-metric span { font-size: 9px; }
+  .metric-note,.project-expanded,.project-expanded summary { font-size: 10px; }
 }
 
 /* Keep the 3D companion beside every section while its pose follows the scroll. */
