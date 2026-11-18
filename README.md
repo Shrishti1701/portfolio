@@ -1,10 +1,4 @@
-# Shrishti Banshiar — AI Engineer Portfolio
-
-[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit_site-0F766E?style=for-the-badge&logo=vercel&logoColor=white)](https://my-portfolio-seven-rosy-74.vercel.app/)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=20232A)
-![Vite](https://img.shields.io/badge/Vite-8-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES_Modules-F7DF1E?style=for-the-badge&logo=javascript&logoColor=20232A)
-![Responsive Design](https://img.shields.io/badge/Design-Responsive-14B8A6?style=for-the-badge)
+b# Shrishti Banshiar — AI Engineer Portfolio
 
 Personal portfolio for **Shrishti Banshiar**, an AI Engineer focused on applied machine learning, natural language processing, and AI-powered products.
 
